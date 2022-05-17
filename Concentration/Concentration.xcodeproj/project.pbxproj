@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0F8E312833FE6000F95E3D /* ConcentrationThemeChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F8E302833FE6000F95E3D /* ConcentrationThemeChooserViewController.swift */; };
 		0C3E3D5C2833845300349CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E3D5B2833845300349CE3 /* AppDelegate.swift */; };
 		0C3E3D5E2833845300349CE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E3D5D2833845300349CE3 /* SceneDelegate.swift */; };
 		0C3E3D602833845300349CE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E3D5F2833845300349CE3 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0F8E302833FE6000F95E3D /* ConcentrationThemeChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationThemeChooserViewController.swift; sourceTree = "<group>"; };
 		0C3E3D582833845300349CE3 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C3E3D5B2833845300349CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C3E3D5D2833845300349CE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				0C3E3D6F2833847B00349CE3 /* Support */,
 				0C3E3D5F2833845300349CE3 /* ViewController.swift */,
+				0C0F8E302833FE6000F95E3D /* ConcentrationThemeChooserViewController.swift */,
 				0C3E3D702833878800349CE3 /* Concentration.swift */,
 				0C3E3D72283387D200349CE3 /* Card.swift */,
 				0C3E3D612833845300349CE3 /* Main.storyboard */,
@@ -156,6 +159,7 @@
 				0C3E3D712833878800349CE3 /* Concentration.swift in Sources */,
 				0C3E3D73283387D200349CE3 /* Card.swift in Sources */,
 				0C3E3D5C2833845300349CE3 /* AppDelegate.swift in Sources */,
+				0C0F8E312833FE6000F95E3D /* ConcentrationThemeChooserViewController.swift in Sources */,
 				0C3E3D5E2833845300349CE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
