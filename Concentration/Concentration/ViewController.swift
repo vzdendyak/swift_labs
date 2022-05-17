@@ -14,13 +14,27 @@ class ViewController: UIViewController {
         return (cardButtons.count + 1) / 2
     }
     
-    private(set) var flipCount: Int = 0 {
-            didSet {
-                flipCountLabel.text = "Flips: \(flipCount)"
-            }
+    private(set) var flipCount: Int = 0{
+        didSet{
+            updateFlipCountLabel()
         }
-        
-    @IBOutlet private weak var flipCountLabel: UILabel!
+    }
+    
+ 
+    func updateFlipCountLabel(){
+        let attributes : [NSAttributedString.Key : Any] = [
+            .strokeWidth: 5.0,
+            .strokeColor: #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
+        ]
+        let attrString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
+        flipCountLabel.attributedText = attrString;
+    }
+    
+    @IBOutlet private weak var flipCountLabel: UILabel!{
+        didSet{
+            updateFlipCountLabel()
+        }
+    }
     @IBOutlet private var cardButtons: [UIButton]!
     
     @IBAction private func touchCard(_ sender: UIButton) {
@@ -48,15 +62,17 @@ class ViewController: UIViewController {
         }
     }
     
-    private var emojiJoices: [String] = ["👻","🎃","😁","🤖","😼","🤝"]
-    private var emoji = Dictionary<Int, String>()
+//    private var emojiJoices: [String] = ["👻","🎃","😁","🤖","😼","🤝"]
+    private var emojiJoices: String = "👻🎃😁🤖😼🤝"
+
+    private var emoji = [Card:String]()
     
     private func emoji(for card: Card)-> String {
-        if emoji[card.identifier] == nil, emojiJoices.count > 0 {
-                
-            emoji[card.identifier] = emojiJoices.remove(at: emojiJoices.count.arc4random)
+        if emoji[card] == nil, emojiJoices.count > 0 {
+            let rnd = emojiJoices.index(emojiJoices.startIndex, offsetBy: emojiJoices.count.arc4random)
+            emoji[card] = String(emojiJoices.remove(at: rnd))
             }
-        return emoji[card.identifier] ?? "?"
+        return emoji[card] ?? "?"
     }
 }
 
