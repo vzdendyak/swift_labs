@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ConcentrationV2
+//  Concentration
 //
 //  Created by ad1 on 17.05.2022.
 //
